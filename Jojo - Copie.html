@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>JoJo's Bizarre Adventure</title>
+
+		<link rel="stylesheet" type="text/css" href="JojoMain.css">
+
+	</head>
+
+	<body>	
+		
+		<h1 style=color:#FF00E8>JoJo's Bizarre Adventure</h1>
+		
+		<div>
+			<button class="button buttonMute" onclick="audio.volume = 0.0">Stop Music</button>
+			<button class="button buttonAllow" onclick="Music()">Allow Music</button>
+		</div>
+		
+		<h2 style=color:#FF00E8>JoJo c'est quoi ?</h2>
+		
+		<p style=color:#FF00E8> JoJo's Bizarre Adventure (ジョジョの奇妙な冒険, JoJo no kimyō na bōken?) est un manga de Hirohiko Araki. Il a été prépublié entre 1986 et 2004 dans l'hebdomadaire Weekly Shōnen Jump, et est prépublié depuis 2005 dans le mensuel Ultra Jump à la suite du changement de cible éditoriale opéré dans la septième partie du manga. La version française est d'abord sortie aux éditions J'ai lu en 46 tomes, mais la publication fut abandonnée en 2006. Tonkam a alors repris l'édition à partir de la cinquième partie, Golden Wind. L'éditeur réédite par la suite les premières parties, en commençant par la troisième.
+
+		Le manga est adapté en une série d'OAV de treize épisodes, qui retrace une partie de la troisième partie du manga, produite par Studio A.P.P.P. et éditée en France par Déclic Images. Une adaptation en série télévisée d'animation de 26 épisodes produite par David Production est diffusée entre octobre 2012 et mars 2013 et adapte les deux premières parties du manga. L'adaptation de la troisième partie est diffusée entre avril 2014 et juin 2015. L'adaptation de la quatrième partie est diffusée entre avril et décembre 2016. L'adaptation de la cinquième partie est diffusée entre octobre 2018 et juin 2019. Dans les pays francophones, la série est diffusée en simulcast par Crunchyroll et ADN.
+
+		Avec 100 millions de volumes commercialisés, c'est l'une des bandes dessinées les plus vendues au monde.</p>
+		
+		<h3 style=color:#FF00E8>Les JoJos</h3>
+		
+		<ul style=color:#9700FF >
+			<li>Jonathan Joestar</li>
+			<li>Joseph Joestar</li>
+			<li>Jôtarô Kûjô</li>
+			<li>Jôsuke Higashikata (4) (« Jôsuke » s'écrit « 仗助 » ; si le premier kanji se prononce « Jô », le second peut être prononcé soit « Suke » soit « Jo », d'où son surnom)</li>
+			<li>Giorno Giovanna, prononciation à l'italienne d' « Haruno Shiobana » (les syllabes « Jo » et « Gio » s’écrivent de la même manière en katakana (ジョ))</li>
+			<li>Jolyne Cujoh</li>
+			<li>Johnny Joestar</li>
+			<li>Jôsuke Higashikata (8) (même procédé que le précédent ; sauf qu'il ne s'agit pas de la même personne, celui-ci étant le héros principal dans la huitième partie, JoJolion)</li>
+		</ul>
+		
+		<br>
+
+			<script>
+
+			var audio=document.createElement('audio');
+			var first=true;
+				  window.addEventListener('mousedown',onmousedown);
+			 
+				function Music(){
+					audio.src="BackGroundTheme.mp3";
+					audio.play();
+					audio.volume = 0.2;
+					audio.loop()
+				   }
+
+				
+				function PillarTheme(){
+				   audio.src="Pillar Theme.mp3";
+				   audio.play();
+				   audio.volume = 1.0;
+				   }
+				   
+				   
+				function DIO(){
+				   audio.src="Dio.mp3";
+				   audio.play();
+				   audio.volume = 1.0;
+				   }
+				   
+			</script> 
+		
+		<div class="row">
+			<div class="column">	
+				<img src="Joseph_EoH.png" alt="Oh MY GOD" onclick="PillarTheme()">
+			</div>
+			<div class="column">	
+				<video width=600 height=300 controls >
+					<source src=JoJos_Bizarre_Adventure___Full_OP_1-9.mp4>
+				</video>
+			</div>
+			
+			<div class="column">	
+				<img src="Jonathan_asb.png" height="835" alt="DIOOO!!" onclick="DIO()">
+			</div>
+		</div>
+
+	</body>
+
+</html> 
